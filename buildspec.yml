@@ -1,32 +1,17 @@
 version: 0.2
-
 run-as: root
-
 phases:
-  
   pre_build:
-    
     run-as: root
-    
-    commands:
-      
+    commands:      
       - yum -y update
-
  
   build:
-    
     run-as: root
-
       commands:
-
         - sudo yum install nginx -y
 
-
-
   post_build:
-
     run-as: root
-
       commands:
-
         - echo "welcome"
